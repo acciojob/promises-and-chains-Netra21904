@@ -4,11 +4,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const age = parseInt(document.getElementById('age').value);
 
-    if (!name || isNaN(age)) {
-        alert("Please enter valid details.");
-        return;
-    }
-
     const votingPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (age > 18) {
