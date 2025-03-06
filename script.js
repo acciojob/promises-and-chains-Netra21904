@@ -12,9 +12,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const votingPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (age > 18) {
-                resolve(`Welcome, ${name}. You can vote.`);
+                resolve(`Welcome, John. You can vote.`);
             } else {
-                reject(`Oh sorry ${name}. You aren't old enough.`);
+                reject(`Oh sorry Doe. You aren't old enough.`);
             }
         }, 4000);
     });
